@@ -90,7 +90,7 @@
     NSString *path = [jsonDic1 objectForKey:@"image"];
     if ( [path isEqual:[NSNull null]] ){
         NSLog(@"image空です");
-        path=@"http://temper.moo.jp/catk/no_image.jpg";
+        path=[NSString stringWithFormat:@"https://s3-ap-northeast-1.amazonaws.com/ukai-ksurprise/image/noimage_%d.png",arc4random()%8+1];
     }
     return path;
 }
@@ -141,7 +141,7 @@
     
     if ( [test isEqual:[NSNull null]] ){
         NSLog(@"空です");
-        test=@"MacBook_005.png";
+        test=@"noimage_1.png";
     }
     NSLog(@"no null");
 //    NSString *URLString =test;
