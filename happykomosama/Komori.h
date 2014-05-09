@@ -1,5 +1,5 @@
 //
-//  Komori.h
+//  ;
 //  happykomosama
 //
 //  Created by Ukai Yu on 2014/05/10.

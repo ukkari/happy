@@ -21,6 +21,7 @@
     NSMutableData * receivedData;
     AVAudioPlayer *player;
     int select;
+    Komori *komori;
 }
 
 - (void)viewDidLoad
@@ -36,6 +37,7 @@
     array = [NSJSONSerialization JSONObjectWithData:jsondata options:NSJSONReadingMutableLeaves error:&error];
     NSLog(@"%lu",(unsigned long)[array count]);
     count = [array count];
+    komori = [[Komori alloc]init];
 }
 
 #pragma mark - tableview
@@ -166,7 +168,12 @@
     ViewController2.snamelabel=[self name:indexPath.row];
     ViewController2.sgrouplabel=[self group:indexPath.row];
     ViewController2.voicepath=[self url:indexPath.row];
-     [self.navigationController pushViewController:ViewController2 animated:YES];
+    
+    if([komori respondsToSelector:@selector(loveMao)]){
+        if([komori performSelector:@selector(loveMao)]){
+            [self.navigationController pushViewController: ViewController2 animated:YES];
+        }
+    }
     //[self presentViewController:ViewController2 animated:YES completion:nil];
     
 //    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;

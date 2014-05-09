@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Komori.h"
 @interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>{
 IBOutlet UICollectionView *collectionView;
 }
