@@ -18,6 +18,7 @@
     NSString *sgrouplabel;
     NSString *voicepath;
     NSMutableData * receivedData;
+    AVAudioPlayer* audioPlayer;
 }
 @synthesize imagepath;
 @synthesize snamelabel;
@@ -57,6 +58,8 @@
 }
 
 -(void)willMoveToParentViewController:(UIViewController *)parent{
+    [audioPlayer stop];
+    audioPlayer = nil;
     [self.navigationController setNavigationBarHidden:TRUE];
 }
 
@@ -84,18 +87,13 @@
 //}
 
 -(IBAction)select{
-    NSLog(@"play sound");
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"voice.mp3"];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:fileName];
-    SystemSoundID sound;
-    //NSString *path = [[NSBundle mainBundle] pathForResource:@"answer3" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound);
+    
+    [audioPlayer play];
+    
+    //AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound);
     
     // サウンドの再生
-    AudioServicesPlaySystemSound(sound);
+    //AudioServicesPlaySystemSound(sound);
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [receivedData appendData:data];
@@ -111,6 +109,8 @@
     //[connection release];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
+    NSURL *url = [NSURL fileURLWithPath:filePath];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     [SVProgressHUD dismiss];
 }
 

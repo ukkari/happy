@@ -17,5 +17,6 @@
 @property NSString* snamelabel;
 @property NSString* sgrouplabel;
 @property NSString* voicepath;
+
 -(IBAction)select;
 @end
