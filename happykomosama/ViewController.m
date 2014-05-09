@@ -37,6 +37,7 @@
     NSLog(@"%lu",(unsigned long)[array count]);
     count = [array count];
 }
+
 #pragma mark - tableview
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 //{

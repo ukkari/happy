@@ -50,6 +50,16 @@
     }
     [SVProgressHUD show];
 }
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    [self.navigationController setNavigationBarHidden:FALSE];
+}
+
+-(void)willMoveToParentViewController:(UIViewController *)parent{
+    [self.navigationController setNavigationBarHidden:TRUE];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

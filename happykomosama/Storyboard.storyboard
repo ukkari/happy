@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="aYD-7k-JXK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="WDT-E0-cTQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="ZhI-vX-lBs">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AHf-0K-AJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="aYD-7k-JXK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fNV-Q5-nC6">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="lhu-Nj-dOy" kind="relationship" relationship="rootViewController" id="TCj-Pl-H4A"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-762" y="-144"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="0cr-5H-ODZ">
             <objects>
@@ -32,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUV-L7-5NS">
-                                <rect key="frame" x="0.0" y="61" width="768" height="140"/>
+                                <rect key="frame" x="0.0" y="-18" width="768" height="219"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_headertag.png" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-1I-HAM">
-                                <rect key="frame" x="0.0" y="61" width="768" height="135"/>
+                                <rect key="frame" x="0.0" y="35" width="768" height="135"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="cJ7-CI-xMQ">
@@ -48,8 +33,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2AN-VW-spb">
-                                <rect key="frame" x="74" y="311" width="636" height="647"/>
+                                <rect key="frame" x="74" y="287" width="636" height="647"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9tQ-WQ-TgG">
                                     <size key="itemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -89,13 +75,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Ch-5i-kFA"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="2AN-VW-spb" id="qGZ-xp-ncI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rt-LP-Shm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="-162"/>
+            <point key="canvasLocation" x="1055" y="-162"/>
         </scene>
         <!--Su View Controller-->
         <scene sceneID="r1Y-pc-d0D">
@@ -118,21 +105,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="komosama_slide_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="HBe-OW-CEk">
-                                <rect key="frame" x="97" y="208" width="574" height="683"/>
+                                <rect key="frame" x="97" y="425" width="574" height="683"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07y-XP-Cdp">
                                 <rect key="frame" x="97" y="257" width="574" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LiT.inc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vi-eO-Q1z">
-                                <rect key="frame" x="245" y="769" width="375" height="42"/>
+                                <rect key="frame" x="260" y="784" width="375" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="komosama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy4-Xa-iPh">
-                                <rect key="frame" x="245" y="713" width="375" height="42"/>
+                                <rect key="frame" x="260" y="728" width="375" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="highlightedColor"/>
@@ -158,6 +146,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="grouplabel" destination="0Vi-eO-Q1z" id="jpg-I8-EIM"/>
                         <outlet property="namelabel" destination="jy4-Xa-iPh" id="1Xc-F4-ppO"/>
@@ -166,7 +155,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLb-Yw-Tpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="-162"/>
+            <point key="canvasLocation" x="1904" y="-162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KgM-Co-IZH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WDT-E0-cTQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CYO-OL-LA8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lhu-Nj-dOy" kind="relationship" relationship="rootViewController" id="YJQ-Vc-tgY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhh-yQ-fIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="-162"/>
         </scene>
     </scenes>
     <resources>
@@ -174,7 +181,7 @@
         <image name="komosama_callicon.png" width="250" height="207"/>
         <image name="komosama_header.png" width="1536" height="280"/>
         <image name="komosama_headertag.png" width="1229" height="190"/>
-        <image name="komosama_slide_photo.png" width="1094" height="1106"/>
+        <image name="komosama_slide_photo.png" width="908" height="217"/>
         <image name="komosama_slidebg.png" width="1414" height="1638"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
