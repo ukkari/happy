@@ -68,32 +68,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)view_SwipeRight:(UISwipeGestureRecognizer *)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-//-(IBAction)select{
-//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-//    NSURL *theURL = [NSURL URLWithString:voicepath];
-//    //http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
-//    NSURLRequest *theRequest=[NSURLRequest requestWithURL:theURL];
-//    NSURLConnection *theConnection=[[NSURLConnection alloc]
-//                                    initWithRequest:theRequest delegate:self];
-//    if (theConnection) {
-//        NSLog(@"start loading");
-//        receivedData = [NSMutableData data];
-//    }
-//
-//}
 
 -(IBAction)select{
-    
     [audioPlayer play];
-    
-    //AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound);
-    
-    // サウンドの再生
-    //AudioServicesPlaySystemSound(sound);
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [receivedData appendData:data];
