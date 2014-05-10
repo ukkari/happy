@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>{
 IBOutlet UICollectionView *collectionView;
 }
+- (IBAction)presentTapped:(id)sender;
 
 @end

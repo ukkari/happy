@@ -70,6 +70,9 @@
 		DFAC3FBA191D3B4E00C958B4 /* noimage_6.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FB2191D3B4E00C958B4 /* noimage_6.png */; };
 		DFAC3FBB191D3B4E00C958B4 /* noimage_7.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FB3191D3B4E00C958B4 /* noimage_7.png */; };
 		DFAC3FBC191D3B4E00C958B4 /* noimage_8.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FB4191D3B4E00C958B4 /* noimage_8.png */; };
+		DFAC3FC2191E129300C958B4 /* icon_present.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FC1191E129300C958B4 /* icon_present.png */; };
+		DFAC3FC5191E137D00C958B4 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC3FC4191E137D00C958B4 /* PresentViewController.m */; };
+		DFAC3FC7191E158900C958B4 /* komoriHigh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FC6191E158900C958B4 /* komoriHigh.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +172,10 @@
 		DFAC3FB2191D3B4E00C958B4 /* noimage_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_6.png; sourceTree = "<group>"; };
 		DFAC3FB3191D3B4E00C958B4 /* noimage_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_7.png; sourceTree = "<group>"; };
 		DFAC3FB4191D3B4E00C958B4 /* noimage_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_8.png; sourceTree = "<group>"; };
+		DFAC3FC1191E129300C958B4 /* icon_present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_present.png; sourceTree = "<group>"; };
+		DFAC3FC3191E137D00C958B4 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentViewController.h; path = happykomosama/PresentViewController.h; sourceTree = "<group>"; };
+		DFAC3FC4191E137D00C958B4 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentViewController.m; path = happykomosama/PresentViewController.m; sourceTree = "<group>"; };
+		DFAC3FC6191E158900C958B4 /* komoriHigh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komoriHigh.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +208,7 @@
 		2AB5907A191D4A3F00005053 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				DFAC3FC6191E158900C958B4 /* komoriHigh.jpg */,
 				2AB5907B191D4A3F00005053 /* Icon-40.png */,
 				2AB5907C191D4A3F00005053 /* Icon-40@2x.png */,
 				2AB5907D191D4A3F00005053 /* Icon-72.png */,
@@ -256,6 +264,7 @@
 		C7395B5B191A1D13006AAB03 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				DFAC3FC1191E129300C958B4 /* icon_present.png */,
 				2AB5907A191D4A3F00005053 /* icons */,
 				DFAC3FAD191D3B4E00C958B4 /* noimage_1.png */,
 				DFAC3FAE191D3B4E00C958B4 /* noimage_2.png */,
@@ -280,6 +289,8 @@
 		C759829B19178CE70053AD9B = {
 			isa = PBXGroup;
 			children = (
+				DFAC3FC3191E137D00C958B4 /* PresentViewController.h */,
+				DFAC3FC4191E137D00C958B4 /* PresentViewController.m */,
 				C75982AD19178CE70053AD9B /* happykomosama */,
 				C75982CC19178CE80053AD9B /* happykomosamaTests */,
 				C75982A619178CE70053AD9B /* Frameworks */,
@@ -455,6 +466,7 @@
 				DFAC3FBA191D3B4E00C958B4 /* noimage_6.png in Resources */,
 				C75982B219178CE70053AD9B /* InfoPlist.strings in Resources */,
 				C73EA03C191B29950053FD16 /* no_image.jpg in Resources */,
+				DFAC3FC7191E158900C958B4 /* komoriHigh.jpg in Resources */,
 				2AB5908E191D4A3F00005053 /* Icon-Small@2x.png in Resources */,
 				DFAC3FB5191D3B4E00C958B4 /* noimage_1.png in Resources */,
 				C7CDDBBB191D13D300BE0D7F /* SVProgressHUD.bundle in Resources */,
@@ -471,6 +483,7 @@
 				C70CB6CE191BD0D900BC546E /* komosama_callicon.png in Resources */,
 				2AB5908B191D4A3F00005053 /* Icon-76.png in Resources */,
 				C7395B61191A1DAA006AAB03 /* Storyboard.storyboard in Resources */,
+				DFAC3FC2191E129300C958B4 /* icon_present.png in Resources */,
 				2AB5908F191D4A3F00005053 /* Icon.png in Resources */,
 				DFAC3FB6191D3B4E00C958B4 /* noimage_2.png in Resources */,
 			);
@@ -502,6 +515,7 @@
 				C7CDDBBC191D13D300BE0D7F /* SVProgressHUD.m in Sources */,
 				C75982BE19178CE80053AD9B /* ViewController.m in Sources */,
 				C70CB6BE191BC7FB00BC546E /* MKAnnotationView+WebCache.m in Sources */,
+				DFAC3FC5191E137D00C958B4 /* PresentViewController.m in Sources */,
 				C70CB6C2191BC7FB00BC546E /* SDWebImageDecoder.m in Sources */,
 				C70CB6C9191BC7FB00BC546E /* UIImage+MultiFormat.m in Sources */,
 				C70CB6C4191BC7FB00BC546E /* SDWebImageDownloaderOperation.m in Sources */,

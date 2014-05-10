@@ -193,4 +193,7 @@
 
 }
 
+- (IBAction)presentTapped:(id)sender {
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"present"] animated:YES];
+}
 @end

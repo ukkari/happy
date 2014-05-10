@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_headertag.png" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-1I-HAM">
-                                <rect key="frame" x="0.0" y="35" width="768" height="135"/>
+                                <rect key="frame" x="0.0" y="55" width="768" height="135"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="cJ7-CI-xMQ">
@@ -75,6 +75,16 @@
                                     <outlet property="delegate" destination="lhu-Nj-dOy" id="oAU-B1-1wY"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GG-5G-y8e">
+                                <rect key="frame" x="352" y="204" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_present.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentTapped:" destination="lhu-Nj-dOy" eventType="touchUpInside" id="pf2-kq-V0y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -161,6 +171,40 @@
             </objects>
             <point key="canvasLocation" x="1904" y="-162"/>
         </scene>
+        <!--Present View Controller-->
+        <scene sceneID="vPr-SA-mV2">
+            <objects>
+                <viewController restorationIdentifier="present" storyboardIdentifier="present" id="Qpq-4K-9le" customClass="PresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iJb-cB-G1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGh-1w-3mW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0wk-LQ-JtN" customClass="P">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komosama_slidebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-oR-QSh">
+                                <rect key="frame" x="0.0" y="61" width="768" height="963"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6W-ZG-68D">
+                                <rect key="frame" x="129" y="136" width="511" height="791"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="komoriHigh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h4u-ch-BYi">
+                                        <rect key="frame" x="0.0" y="0.0" width="511" height="790"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvr-Vp-q70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="976"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KgM-Co-IZH">
             <objects>
@@ -181,6 +225,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_present.png" width="100" height="100"/>
+        <image name="komoriHigh.jpg" width="1429" height="2000"/>
         <image name="komosama_bg.png" width="1536" height="2048"/>
         <image name="komosama_callicon.png" width="250" height="207"/>
         <image name="komosama_header.png" width="1536" height="280"/>
