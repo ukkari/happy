@@ -200,6 +200,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="h4u-ch-BYi" id="Pze-PT-jf7"/>
+                        <outlet property="scrollView" destination="O6W-ZG-68D" id="ij8-Wg-Zeq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvr-Vp-q70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

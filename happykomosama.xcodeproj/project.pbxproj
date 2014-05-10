@@ -71,8 +71,8 @@
 		DFAC3FBB191D3B4E00C958B4 /* noimage_7.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FB3191D3B4E00C958B4 /* noimage_7.png */; };
 		DFAC3FBC191D3B4E00C958B4 /* noimage_8.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FB4191D3B4E00C958B4 /* noimage_8.png */; };
 		DFAC3FC2191E129300C958B4 /* icon_present.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FC1191E129300C958B4 /* icon_present.png */; };
-		DFAC3FC5191E137D00C958B4 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC3FC4191E137D00C958B4 /* PresentViewController.m */; };
 		DFAC3FC7191E158900C958B4 /* komoriHigh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAC3FC6191E158900C958B4 /* komoriHigh.jpg */; };
+		DFAC3FCC191E1B9300C958B4 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC3FC9191E1A7100C958B4 /* PresentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,9 +173,9 @@
 		DFAC3FB3191D3B4E00C958B4 /* noimage_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_7.png; sourceTree = "<group>"; };
 		DFAC3FB4191D3B4E00C958B4 /* noimage_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage_8.png; sourceTree = "<group>"; };
 		DFAC3FC1191E129300C958B4 /* icon_present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_present.png; sourceTree = "<group>"; };
-		DFAC3FC3191E137D00C958B4 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentViewController.h; path = happykomosama/PresentViewController.h; sourceTree = "<group>"; };
-		DFAC3FC4191E137D00C958B4 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentViewController.m; path = happykomosama/PresentViewController.m; sourceTree = "<group>"; };
 		DFAC3FC6191E158900C958B4 /* komoriHigh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komoriHigh.jpg; sourceTree = "<group>"; };
+		DFAC3FC8191E1A7100C958B4 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		DFAC3FC9191E1A7100C958B4 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,8 +289,6 @@
 		C759829B19178CE70053AD9B = {
 			isa = PBXGroup;
 			children = (
-				DFAC3FC3191E137D00C958B4 /* PresentViewController.h */,
-				DFAC3FC4191E137D00C958B4 /* PresentViewController.m */,
 				C75982AD19178CE70053AD9B /* happykomosama */,
 				C75982CC19178CE80053AD9B /* happykomosamaTests */,
 				C75982A619178CE70053AD9B /* Frameworks */,
@@ -328,6 +326,8 @@
 				DFAC3FAB191D3B0A00C958B4 /* Komori.m */,
 				C7395B5B191A1D13006AAB03 /* image */,
 				C75982B619178CE70053AD9B /* AppDelegate.h */,
+				DFAC3FC8191E1A7100C958B4 /* PresentViewController.h */,
+				DFAC3FC9191E1A7100C958B4 /* PresentViewController.m */,
 				C75982B719178CE70053AD9B /* AppDelegate.m */,
 				C7395B60191A1DAA006AAB03 /* Storyboard.storyboard */,
 				C75982BC19178CE70053AD9B /* ViewController.h */,
@@ -504,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAC3FCC191E1B9300C958B4 /* PresentViewController.m in Sources */,
 				DFAC3FAC191D3B0A00C958B4 /* Komori.m in Sources */,
 				C70CB6D2191BD17500BC546E /* SuViewController.m in Sources */,
 				C70CB6BF191BC7FB00BC546E /* NSData+ImageContentType.m in Sources */,
@@ -515,7 +516,6 @@
 				C7CDDBBC191D13D300BE0D7F /* SVProgressHUD.m in Sources */,
 				C75982BE19178CE80053AD9B /* ViewController.m in Sources */,
 				C70CB6BE191BC7FB00BC546E /* MKAnnotationView+WebCache.m in Sources */,
-				DFAC3FC5191E137D00C958B4 /* PresentViewController.m in Sources */,
 				C70CB6C2191BC7FB00BC546E /* SDWebImageDecoder.m in Sources */,
 				C70CB6C9191BC7FB00BC546E /* UIImage+MultiFormat.m in Sources */,
 				C70CB6C4191BC7FB00BC546E /* SDWebImageDownloaderOperation.m in Sources */,

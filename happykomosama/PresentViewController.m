@@ -12,12 +12,20 @@
 
 @end
 
-@implementation PresentViewController
+@implementation PresentViewController{
+    
+    __weak IBOutlet UIImageView *imageView;
+    __weak IBOutlet UIScrollView *scrollView;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [scrollView setMinimumZoomScale: 1.0];
+    [scrollView setMaximumZoomScale: 5.0];
+    [scrollView setDelegate: self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +42,13 @@
 -(void)willMoveToParentViewController:(UIViewController *)parent{
     [self.navigationController setNavigationBarHidden:TRUE];
 }
+
+- (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return imageView;
+}
+
+
+
 
 /*
 #pragma mark - Navigation
